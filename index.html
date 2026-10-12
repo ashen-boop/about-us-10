@@ -184,39 +184,45 @@
       letter-spacing: 0.3px;
     }
 
-    /* Logo image - right side on desktop */
+    /* Logo image - right side on desktop — PITCH BLACK CONTAINER */
     .hero-logo-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
+      background: #000000;
+      border-radius: 28px;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
     }
     .hero-logo-wrapper img {
       max-width: 100%;
       height: auto;
-      border-radius: 24px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
       display: block;
       filter: none;
       opacity: 1;
-      border: 1px solid rgba(255, 255, 255, 0.05);
     }
 
-    /* Mobile logo (hidden on desktop) */
+    /* Mobile logo — PITCH BLACK CONTAINER (hidden on desktop) */
     .hero-logo-mobile {
       display: none;
       margin: 20px 0 24px;
       width: 100%;
+      background: #000000;
+      border-radius: 28px;
+      padding: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
     }
     .hero-logo-mobile img {
       max-width: 100%;
       height: auto;
-      border-radius: 24px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
       display: block;
       filter: none;
       opacity: 1;
-      border: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     @media (max-width: 820px) {
@@ -639,6 +645,24 @@
     .value-item h5 { font-weight: 700; font-size: 1rem; color: #f0f3f8; }
     .value-item p { font-size: 0.8rem; color: #9aa4b2; line-height: 1.5; margin-top: 2px; }
 
+    /* ---------- WHITE VALUE CARDS: Quality Obsession & Integrity ---------- */
+    .value-item.white {
+      background: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    }
+    .value-item.white:hover {
+      background: #f5f5f5;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.75);
+      border-color: rgba(249, 115, 22, 0.4);
+    }
+    .value-item.white h5 {
+      color: #000000;
+    }
+    .value-item.white p {
+      color: #333333;
+    }
+
     /* ---------- VALUES: MOBILE HORIZONTAL SCROLLER ONLY ---------- */
     @media (max-width: 720px) {
       .values-grid {
@@ -879,7 +903,7 @@
       <div class="left-col">
         <div style="display:inline-block; background:rgba(249,115,22,0.12); padding:4px 18px; border-radius:40px; font-size:0.7rem; font-weight:700; letter-spacing:2px; color:#f97316; text-transform:uppercase; margin-bottom:12px;"><i class="fas fa-crown" style="margin-right:6px;"></i> about us</div>
         
-        <!-- Mobile logo (visible only on mobile) -->
+        <!-- Mobile logo (visible only on mobile) — PITCH BLACK BOX -->
         <div class="hero-logo-mobile">
           <img src="https://i.postimg.cc/ryP6R0k5/The-Artistic-Unity-(4)-(1).png" alt="The Artistic Unity Logo">
         </div>
@@ -892,7 +916,7 @@
         </div>
       </div>
       
-      <!-- Right column: desktop logo (hidden on mobile) -->
+      <!-- Right column: desktop logo (hidden on mobile) — PITCH BLACK BOX -->
       <div class="hero-logo-wrapper desktop-logo">
         <img src="https://i.postimg.cc/ryP6R0k5/The-Artistic-Unity-(4)-(1).png" alt="The Artistic Unity Logo">
       </div>
@@ -1019,9 +1043,9 @@
     </div>
     <div class="values-grid">
       <div class="value-item"><div class="vi">🎨</div><h5>Creativity First</h5><p>We bring bold, original design to every brand.</p></div>
-      <div class="value-item"><div class="vi">⚡</div><h5>Quality Obsession</h5><p>Every pixel, line of code, and campaign is built with excellence.</p></div>
+      <div class="value-item white"><div class="vi">⚡</div><h5>Quality Obsession</h5><p>Every pixel, line of code, and campaign is built with excellence.</p></div>
       <div class="value-item"><div class="vi">🤝</div><h5>Partnership</h5><p>Your success is our success — we work alongside you.</p></div>
-      <div class="value-item"><div class="vi">🌱</div><h5>Integrity</h5><p>Honest communication, fair pricing, and doing the right thing.</p></div>
+      <div class="value-item white"><div class="vi">🌱</div><h5>Integrity</h5><p>Honest communication, fair pricing, and doing the right thing.</p></div>
     </div>
   </div>
 </section>
