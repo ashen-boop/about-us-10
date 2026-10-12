@@ -184,7 +184,7 @@
       letter-spacing: 0.3px;
     }
 
-    /* Logo image - right side on desktop — PITCH BLACK CONTAINER */
+    /* Logo image - right side on desktop — PITCH BLACK CONTAINER (NO white outline) */
     .hero-logo-wrapper {
       display: flex;
       justify-content: center;
@@ -205,7 +205,7 @@
       opacity: 1;
     }
 
-    /* Mobile logo — PITCH BLACK CONTAINER (hidden on desktop) */
+    /* Mobile logo — PITCH BLACK CONTAINER (NO white outline) */
     .hero-logo-mobile {
       display: none;
       margin: 20px 0 24px;
@@ -328,7 +328,7 @@
       border-radius: 28px;
       padding: 36px 28px 32px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      border: 1px solid #ffffff; /* 1px white outline */
       transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
       position: relative;
       cursor: pointer;
@@ -338,7 +338,7 @@
     .service-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-      border-color: rgba(249, 115, 22, 0.2);
+      border-color: #ffffff;
       background: #0a0a0a;
     }
     .service-card .icon {
@@ -445,7 +445,7 @@
       background: rgba(249, 115, 22, 0.8);
     }
 
-    /* Hub cards — SAME square container as .service-card */
+    /* Hub cards — SAME square container as .service-card (with white outline) */
     .hub-card {
       background: #000000;
       backdrop-filter: blur(8px);
@@ -453,7 +453,7 @@
       border-radius: 28px;
       padding: 36px 28px 32px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      border: 1px solid #ffffff; /* 1px white outline */
       transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
       position: relative;
       flex: 0 0 380px;
@@ -461,7 +461,7 @@
     }
     .hub-card:hover {
       box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-      border-color: rgba(249, 115, 22, 0.2);
+      border-color: #ffffff;
       background: #0a0a0a;
     }
     .hub-card .icon {
@@ -630,7 +630,7 @@
       border-radius: 24px;
       padding: 28px 20px 24px;
       text-align: center;
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      border: 1px solid #ffffff; /* 1px white outline */
       transition: 0.3s;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
       margin: 0 4px;
@@ -638,7 +638,7 @@
     .value-item:hover {
       transform: translateY(-4px);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
-      border-color: rgba(249, 115, 22, 0.15);
+      border-color: #ffffff;
       background: #0a0a0a;
     }
     .value-item .vi { font-size: 2.2rem; margin-bottom: 10px; display: inline-block; }
@@ -648,13 +648,13 @@
     /* ---------- WHITE VALUE CARDS: Quality Obsession & Integrity ---------- */
     .value-item.white {
       background: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      border: 1px solid #ffffff; /* keep white outline for consistency */
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
     }
     .value-item.white:hover {
       background: #f5f5f5;
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.75);
-      border-color: rgba(249, 115, 22, 0.4);
+      border-color: #ffffff;
     }
     .value-item.white h5 {
       color: #000000;
@@ -712,7 +712,7 @@
       padding: 50px 40px;
       margin: 40px 0 20px;
       text-align: center;
-      border: 1px solid rgba(255, 255, 255, 0.04);
+      border: 1px solid #ffffff; /* 1px white outline */
     }
     .contact-teaser .text { color: #fff; }
     .contact-teaser .text h3 { font-size: 1.8rem; font-weight: 700; margin-bottom: 4px; color: #f0f3f8; }
